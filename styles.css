@@ -19,7 +19,43 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
+    font-size: 18px;
+    background-color: lightblue;
+}
+
+h1, h6 {
+  font-family: Helvetica;
+  align-items: center;
+}
+h3 {
+  text-align: center;
+  font-family: Helvetica
+}
+h4 {
+  margin-left: 80px
+}
+
+p {
+  font-family: Helvetica;
+  margin: auto;
+  padding: 10px;
+  width: 80%
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%
+}
+.image {
+  flex-basis: 40%
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
 }
 
 /*********************************************************************
@@ -36,4 +72,23 @@ html, body {
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 10px;
+}
+img {
+  max-width: 100%
+
+}
+.image {
+  flex-basis: 60%
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
 }
